@@ -66,4 +66,4 @@ yq -e -i ".$TEMPLATE_TYPE.$TEMPLATE_INSTANCE_NAME.base_url = \"$TEMPLATE_BASE_UR
 yq -e -i ".$TEMPLATE_TYPE.$TEMPLATE_INSTANCE_NAME.api_key = \"$TEMPLATE_API_KEY\"" /config/recyclarr.yml
 
 # Start the app
-/entrypoint.sh
+/entrypoint.sh "$@"
